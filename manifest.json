@@ -1,0 +1,30 @@
+{
+
+    "manifest_version": 3,
+    "name": "Link Preview",
+    "version": "1.0",
+  
+    "description": "Get previews of links, when you hover over them.",
+
+    "action": {
+        "default_popup": "popup/index.html"
+
+    },
+       "browser_specific_settings": {
+        "gecko": {
+          "id": "links-previews@jdm.dev"
+            }
+        },
+
+
+    "content_scripts": [
+      {
+        
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+      }
+    ]
+
+    
+}
+  
